@@ -137,8 +137,8 @@ module Urbanairship
         pr
       end
       
-       def self.cancel_by_url(url)
-        response = @client.send_request(
+       def self.cancel_by_url(client, url)
+        response = client.send_request(
           method: 'DELETE',
           body: nil,
           url: url,
