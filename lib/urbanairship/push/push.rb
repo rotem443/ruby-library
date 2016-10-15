@@ -119,7 +119,8 @@ module Urbanairship
         scheduled_push
       end
 
-      # Cancel the Scheduled Push
+      # 
+      the Scheduled Push
       #
       # @return [Object] Push Response
       def cancel
@@ -137,7 +138,7 @@ module Urbanairship
         pr
       end
       
-       def self.cancel(url)
+       def self.cancel_by_url(url)
         response = @client.send_request(
           method: 'DELETE',
           body: nil,
