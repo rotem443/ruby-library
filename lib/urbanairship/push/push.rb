@@ -119,8 +119,7 @@ module Urbanairship
         scheduled_push
       end
 
-      # 
-      the Scheduled Push
+      # the Scheduled Push
       #
       # @return [Object] Push Response
       def cancel
