@@ -145,7 +145,6 @@ module Urbanairship
           content_type: 'application/json'
         )
         pr = PushResponse.new(http_response_body: response['body'], http_response_code: response['code'].to_s)
-        logger.info { "Result of canceling scheduled push: #{@url} was a: [#{pr.status_code}]" }
         pr
       end
 
